@@ -1,0 +1,39 @@
+Exercise 1: Print first 10 natural numbers using while loop
+Solution:
+
+i=1
+while i<=10:
+    print(i)
+    i=i+1
+
+Exercise 2: Calculate sum of all numbers from 1 to a given number
+Solution:
+s=0
+a1=int(input("please enter a number="))
+i=0
+while i<=a1:
+    s=s+i
+    i=i+1
+
+print(s)
+
+#if i want to start from another number for the sum just change i to that number
+
+Exercise 3: Print multiplication table of a given number from user
+Solution:
+num=int(input("Please input a number="))
+num1 =int(input("numeber you want to get the table upto="))
+
+for i in range(1,num1+1):
+    print(num, "*", i, "=", num*i)
+# this give that table of the input number upto desired value
+
+Exercise 4: Calculate the cube of all numbers from 1 to a given number
+Solution: 
+
+num=int(input("Please enter the number you want to cube="))
+
+for i in range(1,num+1):
+    print(i,i**3)
+        
+ 
