@@ -68,6 +68,16 @@ def string_functions3():
       h='H'
       print(ord(h)) #This takes string(one letter only) and returns integer according to ASCII.
 
+def string_format():
+    #These are used to put value in string at run time.
+    w="Welcome {} Home {}".format("hello",20)
+    print(w)
+
+    w="Welcome {1} Home {0} ".format("hello",20)
+    print(w)
+
+    w="Welcome {b:<10} Home {a}".format(a=30,b=40)
+    print(w) #^=center the value, < left side value, > right side value.
 
 # ---------------------------
 # Pick which one to run here
@@ -79,3 +89,4 @@ if __name__ == "__main__":
     #string_functions()
     #string_functions2()
     #string_functions3()
+    #string_format()
