@@ -34,6 +34,33 @@ def list_iteration():
     for n in range(t-1,-1,-1):
         print(l[n])
 
+def list_comprehension():
+    l=[] #this is made by using regular formulas we know
+    for a in range(1,11):
+        l.append(a)
+    
+    print(l)
+#This is a list comprehension 
+    n=[m for m in range(1,11)]
+    print(n)
+
+# This can also be done with conditional statements
+    s=[h for h in range(1,11) if h%2==0]
+    print(s)
+
+def list_function():
+    l=[20,30,40,50,60,70,80]
+    #This takes index  
+    del l[1] #This does not give you the element it deleted
+    # This takes index
+    print(l.pop(2))# pop does give you the element it deleted when you print it.
+    
+    print(l)
+
+
+
+
+
 
 
 # ---------------------------
@@ -44,6 +71,8 @@ if __name__ == "__main__":
     #list_indexing()
     #list_slicing()
     #list_iteration()
+    #ist_comprehension()
+    list_function()
     pass
 
 
