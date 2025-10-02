@@ -159,6 +159,87 @@ def string_to_list():
 
     print(L)
 
+def stack_list():
+    l=[]
+    while True:
+        c=int(input(''' 
+                    1. Push elements
+                    2. Pop elements
+                    3. Peek elements
+                    4. Display elements
+                    5. Exit
+                    '''))
+        
+        if c==1:
+            n=input("Enter the Value:- ")
+            l.append(n)
+            print(l)
+
+        elif c==2:
+            if len(l)==0:
+                print("Empty Stack")
+            else:
+                p=l.pop()
+                print(p)
+                print(l)
+
+        elif c==3:
+            if len(l)==0:
+                print("Empty Stack")
+            else:
+                print("Last Value of the Stack", l[-1])
+        
+        elif c==4:
+            print(l)
+        
+        elif c==5:
+            break
+
+def queue_list():
+    q=[]
+    while True:
+        c=int(input(''' 
+                1.Enqueue the elements
+                2.Dequeue the elements
+                3.Front element
+                4.Rear element
+                5.Display Queue
+                6.Exit
+                '''))
+        
+        if c==1:
+            n=input("Enter the Value:-")
+            q.append(n)
+            print(q)
+
+        elif c==2:
+            if len(q)==0:
+                print("Empty Queue")
+            else:
+                del(q[0])
+                print(q)
+        
+        elif c==3:
+            if len(q)==0:
+                print("Empty Queue")
+            else:
+                print("Front element:", q[0])
+        
+        elif c==4:
+            if len(q)==0:
+                print("Empty Queue")
+            else:
+                print("Last element:",q[-1])
+
+        elif c==5:
+            print("Queue=",q)
+
+        elif c==6:
+            break
+
+        else:
+            print("Invalid Opr")
+            
 
 
 # ---------------------------
@@ -174,7 +255,10 @@ if __name__ == "__main__":
     #list_function2()
     #list_functions3()
     #zip_function()
-    string_to_list()
+    #string_to_list()
+    #1stack_list()
+    queue_list()
+
     pass
 
 
